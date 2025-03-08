@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Weather Card */
+.card {
+  width: 350px;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  height: 1.6rem;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  outline: none;
+  width: 70%;
+}
+
+/* Placeholder Styling */
+.search input::placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Search Button */
+.search-icon {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon:hover {
+  background: #ddd;
+}
+
+.weather_icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.col img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.humidity,
+.wind {
+  font-size: 1.5rem;
+}
