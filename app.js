@@ -5,6 +5,7 @@ const apikey = "ef0e0f4b81345d6f4ca327462d6eed66";
 let searchin = document.querySelector(".search input");
 let searchbtn = document.querySelector(".search-icon");
 let weatherIcon = document.querySelector(".weather_icon");
+let weather_C = document.querySelector(".weather_");
 
 async function checkWeather(city) {
   try {
@@ -16,6 +17,7 @@ async function checkWeather(city) {
       return;
     }
 
+    weather_C.innerText = data.weather[0].main;
     document.querySelector(".city").innerText = data.name;
     document.querySelector(".humidity").innerText = data.main.humidity + "%";
     document.querySelector(".temp").innerText =
